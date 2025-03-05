@@ -52,7 +52,7 @@ img.shape
 #### 3. Display the image using matplotlib imshow().
 ```python
 img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2GRAY)
-plt.imshow(img_gray,cmap='grey')
+plt.imshow(img_gray,cmap='Greys')
 plt.show()
 ```
 
