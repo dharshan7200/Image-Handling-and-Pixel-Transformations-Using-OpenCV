@@ -77,7 +77,7 @@ img.shape
 
 #### 7. Crop the image to extract any specific (Eagle alone) object from the image.
 ```python
-cr = img_rgb[200:400,200:400] 
+cr = img_rgb[50:425,200:550] 
 plt.imshow(cr)
 plt.title("Cropped Region")
 plt.axis("off")
@@ -201,7 +201,7 @@ plt.show()
 ```
 #### 23. Merged the H, S, V, displays along with original image.
 ```python
-merged_hsv = cv2.cvtColor(cv2.merge([h, s, v]), cv2.COLOR_HSV2RGB)
+merged_hsv = cv2.cvtColor(cv2.merge([h, s, v]), cv2.COLOR_HSV2BGR)
 combined = np.concatenate((img_rgb, merged_hsv), axis=1)
 plt.figure(figsize=(10, 5))
 plt.imshow(combined)
@@ -214,52 +214,58 @@ plt.show()
 - ### **i)** Read and Display an Image.  
    1.Read 'Eagle_in_Flight.jpg' as grayscale and display:
 
-  ![alt text](<greyscale eagle.png>)
+  ![image](https://github.com/user-attachments/assets/7a0aa73c-425d-4d02-8a14-a2e5e6125c51)
+
 
   2.Save image as PNG and display:
 
-  ![alt text](<png eagle.png>)
+  ![image](https://github.com/user-attachments/assets/a5ac66f4-e1a5-4833-a0d0-c202057df417)
+
 
   3.Cropped image:
 
-  ![alt text](<cropped region.png>)
+  ![image](https://github.com/user-attachments/assets/055792b4-ac3c-4f7b-a76c-9f089112c840)
+
 
   4.Resize and flip Horizontally:
 
-  ![alt text](<flipped horizontally.png>)
+![image](https://github.com/user-attachments/assets/96e86426-66d7-489f-be23-a142fafed783)
 
   5.Read 'Apollo-11-launch.jpg' and  Display the final annotated image:
 
-  ![alt text](<apollo annotated .png>)
+  ![image](https://github.com/user-attachments/assets/95ca09b2-bb69-4b9a-902c-e84b02be45e8)
+
 
 - ### **ii)** Adjust Image Brightness.
 
 1.Create brighter and darker images and display:
 
-![alt text](<bright and dark boy.png>)
+![image](https://github.com/user-attachments/assets/b092a044-caca-4e2d-abe6-45b2e1de8ddf)
 
 - ### **iii)** Modify Image Contrast.  
 1. Modify contrast using scaling factors 1.1 and 1.2:
 
-![alt text](<contrast boy.png>)
+![image](https://github.com/user-attachments/assets/52cf0e60-b786-4173-9c94-deccf59da25d)
+
 
 - ### **iv)** Generate Third Image Using Bitwise Operations.
 
 1.Split 'Boy.jpg' into B, G, R components and display:
 
-![alt text](<bgr boy.png>)
+![image](https://github.com/user-attachments/assets/663f2c76-d281-4427-b5a5-e8695da16fa7)
+
 
 2.Merge the R, G, B channels and display:
 
-![alt text](<Merged rgb boy.png>)
+![image](https://github.com/user-attachments/assets/12fc4958-afaf-4178-9b7c-a8cbcde9669b)
 
 3.Split the image into H, S, V components and display:
 
-![alt text](<hsv boy.png>)
+![image](https://github.com/user-attachments/assets/6e55c163-01cf-4742-bd78-fc79b4ede809)
 
 4.Merge the H, S, V channels and display:
 
-![alt text](<merged hsv with original.png>)
+![image](https://github.com/user-attachments/assets/efc2fa31-893f-44cb-9ed8-f23a96e0e2fe)
 
 ## Result:
 Thus, the images were read, displayed, brightness and contrast adjustments were made, and bitwise operations were performed successfully using the Python program.
